@@ -175,14 +175,14 @@
 :accordingTo rdf:type owl:ObjectProperty ;
              rdfs:domain <http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value> ;
              rdfs:range <http://www.cidoc-crm.org/extensions/crmsci/S4_Observation> ;
-             rdfs:label "According to. "@en .
+             rdfs:comment "According to. "@en .
 
 
 ###  https://w3id.org/multivocality-ontology#hasContributor
 :hasContributor rdf:type owl:ObjectProperty ;
                 rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
                 rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> ;
-                rdfs:label "Making contribution explicit. "@en .
+                rdfs:comment "Making contribution explicit. "@en .
 
 
 #################################################################
@@ -242,7 +242,7 @@
 ###  http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making
 <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> rdf:type owl:Class ;
                                                                  rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> ;
-                                                                 rdfs:comment """This class comprises the action of making honest propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions.
+                                                                 rdfs:comment """This class comprises the action of making honest propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions. 
 	It is characterized by the use of an existing I2 Belief as the premise that together with a set of I3 Inference Logic draws a further I2 Belief as a conclusion.
 	Documenting instances of I5 Inference Making primarily enables tracing the dependency of knowledge from conclusion to premise through subsequent inferences, possibly back to primary evidence, so that the range of influence of knowledge revision at any intermediate stage of complex inference chains on current convictions can be narrowed down by query. The explicit reference to the applied inference logic further allows scholars or scientists to assess if they can or would follow the documented argument. The class is not intended to promote the use of computationally decidable systems of logic as replacements of scholarly justifications of arguments, even though it allows for documenting the use of decidable logic, if that was deemed adequate for the problem at hand.  Principles of scholarly justifications of arguments are also regarded as kinds of inference logic."""@en ;
                                                                  rdfs:label "Inference Making"@en .

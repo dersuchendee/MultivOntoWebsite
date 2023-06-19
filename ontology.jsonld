@@ -19,7 +19,7 @@
 }, {
   "@id" : "http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This class comprises statements about the provenance of an instance of E73 Information Object with known content at the time of making the provenance statements. An instance of I10 Provenance Statement must contain propositions about the presence of a carrier of the respective instance of E73 Information Object in an event or spatiotemporal context of reference. Characteristically, it may pertain to the writing by a known author at a known or unknown date or place, or to the existence of the text known to some public regardless the truth of authorship. "
   } ],
@@ -99,7 +99,7 @@
 }, {
   "@id" : "http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -390,7 +390,7 @@
 }, {
   "@id" : "https://w3id.org/multivocality-ontology#Agent_Related_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Statement about agent. "
   } ],
@@ -400,7 +400,7 @@
 }, {
   "@id" : "https://w3id.org/multivocality-ontology#Functional_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Statement about a function. "
   } ],
@@ -410,7 +410,7 @@
 }, {
   "@id" : "https://w3id.org/multivocality-ontology#Material_Attribution_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Statement about material attribution. "
   } ],
@@ -420,12 +420,12 @@
 }, {
   "@id" : "https://w3id.org/multivocality-ontology#accordingTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "According to. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crmsci/S4_Observation"
@@ -433,12 +433,12 @@
 }, {
   "@id" : "https://w3id.org/multivocality-ontology#hasContributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Making contribution explicit. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"

@@ -1,10 +1,16 @@
-<h2 id="crossreference" class="list">Cross-reference for Multivocality ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Multivocality ontology.
+<h2 id="crossreference" class="list">Cross-reference for Multivocality Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Multivocality Ontology.
 <div xmlns:extra="https://w3id.org/extra#"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
+      <li>
+         <a href="#Agent_Related_Statement"
+            title="https://w3id.org/multivocality-ontology#Agent_Related_Statement">
+            <span>agent related statement</span>
+         </a>
+      </li>
       <li>
          <a href="#http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation"
             title="http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation">Argumentation</a>
@@ -18,12 +24,36 @@ This section provides details for each class and property defined by Multivocali
             title="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption">Belief Adoption</a>
       </li>
       <li>
+         <a href="#Functional_Statement"
+            title="https://w3id.org/multivocality-ontology#Functional_Statement">
+            <span>functional statement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"
+            title="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement">
+            <span>i10 provenance statement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value"
+            title="http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value">
+            <span>i6 belief value</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic"
             title="http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic">Inference Logic</a>
       </li>
       <li>
          <a href="#http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making"
             title="http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making">Inference Making</a>
+      </li>
+      <li>
+         <a href="#Material_Attribution_Statement"
+            title="https://w3id.org/multivocality-ontology#Material_Attribution_Statement">
+            <span>material attribution statement</span>
+         </a>
       </li>
       <li>
          <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
@@ -59,27 +89,26 @@ This section provides details for each class and property defined by Multivocali
             <span>s8 categorical hypothesis building</span>
          </a>
       </li>
-      <li>
-         <a href="#Functional_Statement"
-            title="https://w3id.org/multivocality-ontology#Functional_Statement">Statement about a function. </a>
-      </li>
-      <li>
-         <a href="#Agent_Related_Statement"
-            title="https://w3id.org/multivocality-ontology#Agent_Related_Statement">Statement about agent. </a>
-      </li>
-      <li>
-         <a href="#Material_Attribution_Statement"
-            title="https://w3id.org/multivocality-ontology#Material_Attribution_Statement">Statement about material attribution. </a>
-      </li>
-      <li>
-         <a href="#http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value"
-            title="http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value">This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system.</a>
-      </li>
-      <li>
-         <a href="#http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"
-            title="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement">This class comprises statements about the provenance of an instance of E73 Information Object with known content at the time of making the provenance statements. An instance of I10 Provenance Statement must contain propositions about the presence of a carrier of the respective instance of E73 Information Object in an event or spatiotemporal context of reference. Characteristically, it may pertain to the writing by a known author at a known or unknown date or place, or to the existence of the text known to some public regardless the truth of authorship. </a>
-      </li>
    </ul>
+   <div class="entity" id="Agent_Related_Statement">
+      <h3>agent related statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#Agent_Related_Statement</p>
+      <div class="comment">
+         <span class="markdown">Statement about agent. </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
+               title="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">Proposition Set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation">
       <h3>Argumentation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -208,6 +237,76 @@ This section provides details for each class and property defined by Multivocali
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Functional_Statement">
+      <h3>functional statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#Functional_Statement</p>
+      <div class="comment">
+         <span class="markdown">Statement about a function. </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
+               title="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">Proposition Set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement">
+      <h3>i10 provenance statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement</p>
+      <div class="comment">
+         <span class="markdown">This class comprises statements about the provenance of an instance of E73 Information Object with known content at the time of making the provenance statements. An instance of I10 Provenance Statement must contain propositions about the presence of a carrier of the respective instance of E73 Information Object in an event or spatiotemporal context of reference. Characteristically, it may pertain to the writing by a known author at a known or unknown date or place, or to the existence of the text known to some public regardless the truth of authorship. </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
+               title="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">Proposition Set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value">
+      <h3>i6 belief value<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value</p>
+      <div class="comment">
+         <span class="markdown">This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
+               target="_blank"
+               title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#accordingTo"
+               title="https://w3id.org/multivocality-ontology#accordingTo">according to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be"
+               title="http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be">holds to be</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic">
       <h3>Inference Logic<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -290,6 +389,25 @@ This section provides details for each class and property defined by Multivocali
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Material_Attribution_Statement">
+      <h3>material attribution statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#Material_Attribution_Statement</p>
+      <div class="comment">
+         <span class="markdown">Statement about material attribution. </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
+               title="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">Proposition Set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">
       <h3>Proposition Set<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -309,14 +427,14 @@ This section provides details for each class and property defined by Multivocali
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#Functional_Statement"
-               title="https://w3id.org/multivocality-ontology#Functional_Statement">Statement about a function. </a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Agent_Related_Statement"
-               title="https://w3id.org/multivocality-ontology#Agent_Related_Statement">Statement about agent. </a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Material_Attribution_Statement"
-               title="https://w3id.org/multivocality-ontology#Material_Attribution_Statement">Statement about material attribution. </a>
+            <a href="#Agent_Related_Statement"
+               title="https://w3id.org/multivocality-ontology#Agent_Related_Statement">agent related statement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Functional_Statement"
+               title="https://w3id.org/multivocality-ontology#Functional_Statement">functional statement</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"
-               title="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement">This class comprises statements about the provenance of an instance of E73 Information Object with known content at the time of making the provenance statements. An instance of I10 Provenance Statement must contain propositions about the presence of a carrier of the respective instance of E73 Information Object in an event or spatiotemporal context of reference. Characteristically, it may pertain to the writing by a known author at a known or unknown date or place, or to the existence of the text known to some public regardless the truth of authorship. </a>
+               title="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement">i10 provenance statement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Material_Attribution_Statement"
+               title="https://w3id.org/multivocality-ontology#Material_Attribution_Statement">material attribution statement</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -350,7 +468,7 @@ This section provides details for each class and property defined by Multivocali
          <dt>is in range of</dt>
          <dd>
             <a href="#accordingTo"
-               title="https://w3id.org/multivocality-ontology#accordingTo">According to. </a>
+               title="https://w3id.org/multivocality-ontology#accordingTo">according to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -419,99 +537,6 @@ This section provides details for each class and property defined by Multivocali
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Functional_Statement">
-      <h3>Statement about a function. <sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#Functional_Statement</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
-               title="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">Proposition Set</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Agent_Related_Statement">
-      <h3>Statement about agent. <sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#Agent_Related_Statement</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
-               title="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">Proposition Set</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Material_Attribution_Statement">
-      <h3>Statement about material attribution. <sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#Material_Attribution_Statement</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
-               title="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">Proposition Set</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value">
-      <h3>This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system.<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
-               target="_blank"
-               title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#accordingTo"
-               title="https://w3id.org/multivocality-ontology#accordingTo">According to. </a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be"
-               title="http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be">holds to be</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement">
-      <h3>This class comprises statements about the provenance of an instance of E73 Information Object with known content at the time of making the provenance statements. An instance of I10 Provenance Statement must contain propositions about the presence of a carrier of the respective instance of E73 Information Object in an event or spatiotemporal context of reference. Characteristically, it may pertain to the writing by a known author at a known or unknown date or place, or to the existence of the text known to some public regardless the truth of authorship. <sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
-               title="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">Proposition Set</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
 </div><div xmlns:extra="https://w3id.org/extra#"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      id="objectproperties">
@@ -519,7 +544,9 @@ This section provides details for each class and property defined by Multivocali
    <ul class="hlist">
       <li>
          <a href="#accordingTo"
-            title="https://w3id.org/multivocality-ontology#accordingTo">According to. </a>
+            title="https://w3id.org/multivocality-ontology#accordingTo">
+            <span>according to</span>
+         </a>
       </li>
       <li>
          <a href="#http://www.cidoc-crm.org/extensions/crminf/J6_adopted"
@@ -546,6 +573,12 @@ This section provides details for each class and property defined by Multivocali
          </a>
       </li>
       <li>
+         <a href="#hasContributor"
+            title="https://w3id.org/multivocality-ontology#hasContributor">
+            <span>has contributor</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be"
             title="http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be">
             <span>holds to be</span>
@@ -566,10 +599,6 @@ This section provides details for each class and property defined by Multivocali
       <li>
          <a href="#http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of"
             title="http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of">is subject of</a>
-      </li>
-      <li>
-         <a href="#hasContributor"
-            title="https://w3id.org/multivocality-ontology#hasContributor">Making contribution explicit. </a>
       </li>
       <li>
          <a href="#http://www.cidoc-crm.org/extensions/crminf/J4_that"
@@ -601,18 +630,21 @@ This section provides details for each class and property defined by Multivocali
       </li>
    </ul>
    <div class="entity" id="accordingTo">
-      <h3>According to. <sup class="type-op" title="object property">op</sup>
+      <h3>according to<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/multivocality-ontology#accordingTo</p>
+      <div class="comment">
+         <span class="markdown">According to. </span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
                <a href="#http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value"
-                  title="http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value">This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system.</a>
+                  title="http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value">i6 belief value</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -736,6 +768,33 @@ This section provides details for each class and property defined by Multivocali
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasContributor">
+      <h3>has contributor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#hasContributor</p>
+      <div class="comment">
+         <span class="markdown">Making contribution explicit. </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">e73 information object</a>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">e39 actor</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be">
       <h3>holds to be<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -748,7 +807,7 @@ This section provides details for each class and property defined by Multivocali
             <dt>has range</dt>
             <dd>
                <a href="#http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value"
-                  title="http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value">This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system.</a>
+                  title="http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value">i6 belief value</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is also defined as</dt>
@@ -834,30 +893,6 @@ This section provides details for each class and property defined by Multivocali
                <a href="#http://www.cidoc-crm.org/extensions/crminf/I2_Belief"
                   title="http://www.cidoc-crm.org/extensions/crminf/I2_Belief">Belief</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasContributor">
-      <h3>Making contribution explicit. <sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#hasContributor</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
-                  target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">e73 information object</a>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-                  target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">e39 actor</a>
             </dd>
          </dl>
       </div>
