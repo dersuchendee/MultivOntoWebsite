@@ -1,0 +1,302 @@
+<https://w3id.org/multivocality-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/multivocality-ontology> <http://www.w3.org/2002/07/owl#imports> <http://www.cidoc-crm.org/cidoc-crm/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P116_starts
+<http://www.cidoc-crm.org/cidoc-crm/P116_starts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P116i_is_started_by
+<http://www.cidoc-crm.org/cidoc-crm/P116i_is_started_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object
+<http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for
+<http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P17_was_motivated_by
+<http://www.cidoc-crm.org/cidoc-crm/P17_was_motivated_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P17i_motivated
+<http://www.cidoc-crm.org/cidoc-crm/P17i_motivated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise
+<http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P17_was_motivated_by> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_for
+<http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_for> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P17i_motivated> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that
+<http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P116_starts> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by
+<http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P116i_is_started_by> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J3_applies
+<http://www.cidoc-crm.org/extensions/crminf/J3_applies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J3_applies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J3i_was_applied_by
+<http://www.cidoc-crm.org/extensions/crminf/J3i_was_applied_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J3i_was_applied_by> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J6_adopted
+<http://www.cidoc-crm.org/extensions/crminf/J6_adopted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J6_adopted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P17_was_motivated_by> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J6i_adopted_by
+<http://www.cidoc-crm.org/extensions/crminf/J6i_adopted_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J6i_adopted_by> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P17i_motivated> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from
+<http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for
+<http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise
+<http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> .
+<http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_for
+<http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_for> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+<http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_for> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that
+<http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> .
+<http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by
+<http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+<http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J3_applies
+<http://www.cidoc-crm.org/extensions/crminf/J3_applies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J3_applies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> .
+<http://www.cidoc-crm.org/extensions/crminf/J3_applies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J3i_was_applied_by
+<http://www.cidoc-crm.org/extensions/crminf/J3i_was_applied_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J3i_was_applied_by> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic> .
+<http://www.cidoc-crm.org/extensions/crminf/J3i_was_applied_by> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J4_that
+<http://www.cidoc-crm.org/extensions/crminf/J4_that> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J4_that> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+<http://www.cidoc-crm.org/extensions/crminf/J4_that> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<http://www.cidoc-crm.org/extensions/crminf/J4_that> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of I4 Proposition Set with the instance of I2 Belief that holds an opinion about it."@en .
+<http://www.cidoc-crm.org/extensions/crminf/J4_that> <http://www.w3.org/2000/01/rdf-schema#label> "that"@en .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of
+<http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+<http://www.cidoc-crm.org/extensions/crminf/J4i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#label> "is subject of"@en .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be
+<http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J6_adopted
+<http://www.cidoc-crm.org/extensions/crminf/J6_adopted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J6_adopted> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> .
+<http://www.cidoc-crm.org/extensions/crminf/J6_adopted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J6i_adopted_by
+<http://www.cidoc-crm.org/extensions/crminf/J6i_adopted_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J6i_adopted_by> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+<http://www.cidoc-crm.org/extensions/crminf/J6i_adopted_by> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from
+<http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> .
+<http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for
+<http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+<http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> .
+# 
+# https://w3id.org/multivocality-ontology#accordingTo
+<https://w3id.org/multivocality-ontology#accordingTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/multivocality-ontology#accordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value> .
+<https://w3id.org/multivocality-ontology#accordingTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/extensions/crmsci/S4_Observation> .
+<https://w3id.org/multivocality-ontology#accordingTo> <http://www.w3.org/2000/01/rdf-schema#label> "According to. "@en .
+# 
+# https://w3id.org/multivocality-ontology#hasContributor
+<https://w3id.org/multivocality-ontology#hasContributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/multivocality-ontology#hasContributor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+<https://w3id.org/multivocality-ontology#hasContributor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<https://w3id.org/multivocality-ontology#hasContributor> <http://www.w3.org/2000/01/rdf-schema#label> "Making contribution explicit. "@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be
+<http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/extensions/crminf/I2_Belief> .
+<http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement
+<http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement> <http://www.w3.org/2000/01/rdf-schema#label> "This class comprises statements about the provenance of an instance of E73 Information Object with known content at the time of making the provenance statements. An instance of I10 Provenance Statement must contain propositions about the presence of a carrier of the respective instance of E73 Information Object in an event or spatiotemporal context of reference. Characteristically, it may pertain to the writing by a known author at a known or unknown date or place, or to the existence of the text known to some public regardless the truth of authorship. "@en .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation
+<http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment> .
+<http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the activity of making honest inferences or observations. An honest inference or observation is one in which the E39 Actor carrying out the I1 Argumentation justifies and believes that the I6 Belief Value associated with resulting I2 Belief about the I4 Proposition Set is the correct value at the time that the activity was undertaken and that any I3 Inference Logic  or methodology was correctly applied.\n\tOnly one instance of E39 Actor may carry out an instance of I1 Argumentation, though the E39 Actor may, of course, be an instance of E74 Group.\n"@en .
+<http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> <http://www.w3.org/2000/01/rdf-schema#label> "Argumentation"@en .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/I2_Belief
+<http://www.cidoc-crm.org/extensions/crminf/I2_Belief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crminf/I2_Belief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> .
+<http://www.cidoc-crm.org/extensions/crminf/I2_Belief> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the notion that the associated I4 Proposition Set is held to have a particular I6 Belief Value by a particular E39 Actor. This can be understood as the period of time that an individual or group holds a particular set of propositions to be true, false or somewhere in between."@en .
+<http://www.cidoc-crm.org/extensions/crminf/I2_Belief> <http://www.w3.org/2000/01/rdf-schema#label> "Belief"@en .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic
+<http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> .
+<http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the rules used as inputs to I5 Inference Making.\n\tIn this context the term “logic” is used in the most general sense of the Greek term, and not in the mathematical sense only. Examples are the direct application of formal logic, mathematical theories and calculus, formal or informal default reasoning based on default values associated with categories, probabilistic reasoning based mathematical models and assumed or observed frequencies for certain categories, application of theoretical social models and comparisons with “cultural parallels”, etc. An instance of Inference Logic could also be a reference to the exact software release of a Bayesian reasoner, a rule such as “later layers are on top of earlier layers”, or even a term like “social intuition”, if this is scholarly acceptable. (after Doerr, Kritsotaki and Boutsika 2011). Indeed anything that is scientifically or academically acceptable as a method for drawing conclusions may be included for instance human pattern recognition.\n\tA particular instance of I3 Inference Logic would be the algorithm implemented in a particular revision of a software package.\n\tInstances of I3 Inference Logic not only comprise the method of reasoning, but also the set of categorical laws or axioms used in the argumentation. Often both are inextricably interwoven, for instance in a software implementation.\n"@en .
+<http://www.cidoc-crm.org/extensions/crminf/I3_Inference_Logic> <http://www.w3.org/2000/01/rdf-schema#label> "Inference Logic"@en .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set
+<http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+<http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the sets of formal, binary propositions that an I2 Belief is held about. It could be implemented as a named graph, a spreadsheet or any other structured data-set. Regardless of the specific syntax employed, the effective propositions it contains should be made up of unambiguous identifiers, concepts of a formal ontology and constructs of logic."@en .
+<http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> <http://www.w3.org/2000/01/rdf-schema#label> "Proposition Set"@en .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making
+<http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> .
+<http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the action of making honest propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions. \n\tIt is characterized by the use of an existing I2 Belief as the premise that together with a set of I3 Inference Logic draws a further I2 Belief as a conclusion.\n\tDocumenting instances of I5 Inference Making primarily enables tracing the dependency of knowledge from conclusion to premise through subsequent inferences, possibly back to primary evidence, so that the range of influence of knowledge revision at any intermediate stage of complex inference chains on current convictions can be narrowed down by query. The explicit reference to the applied inference logic further allows scholars or scientists to assess if they can or would follow the documented argument. The class is not intended to promote the use of computationally decidable systems of logic as replacements of scholarly justifications of arguments, even though it allows for documenting the use of decidable logic, if that was deemed adequate for the problem at hand.  Principles of scholarly justifications of arguments are also regarded as kinds of inference logic."@en .
+<http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> <http://www.w3.org/2000/01/rdf-schema#label> "Inference Making"@en .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value
+<http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value> <http://www.w3.org/2000/01/rdf-schema#label> "This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system." .
+# 
+# http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption
+<http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> .
+<http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the action of an E39 Actor adopting a particular instance of I2 Belief to create a new instance of I2 Belief that shares some of the same propositions in the original I4 Proposition Set and the associated I6 Belief Value.\n\tThe basis of I7 Belief Adoption is trust in the source of the instance of I2 Belief rather than the application of the rules in instances of I3 Inference Logic.\n\t\tTypical examples are the citation of academic papers or the reuse of data sets.\n\tWhere an instance of I7 Belief Adoption is based on personal communication (pers.comm.) this should be represented by using P2 has type: “Pers.Comm.” directly from the instance of I7 Belief Adoption."@en .
+<http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption> <http://www.w3.org/2000/01/rdf-schema#label> "Belief Adoption"@en .
+# 
+# http://www.cidoc-crm.org/extensions/crmsci/S4_Observation
+<http://www.cidoc-crm.org/extensions/crmsci/S4_Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crmsci/S4_Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> .
+# 
+# http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making
+<http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> .
+# 
+# http://www.cidoc-crm.org/extensions/crmsci/S6_Data_Evaluation
+<http://www.cidoc-crm.org/extensions/crmsci/S6_Data_Evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crmsci/S6_Data_Evaluation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> .
+# 
+# http://www.cidoc-crm.org/extensions/crmsci/S7_Simulation_or_Prediction
+<http://www.cidoc-crm.org/extensions/crmsci/S7_Simulation_or_Prediction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crmsci/S7_Simulation_or_Prediction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> .
+# 
+# http://www.cidoc-crm.org/extensions/crmsci/S8_Categorical_Hypothesis_Building
+<http://www.cidoc-crm.org/extensions/crmsci/S8_Categorical_Hypothesis_Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/extensions/crmsci/S8_Categorical_Hypothesis_Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+# 
+# https://w3id.org/multivocality-ontology#Agent_Related_Statement
+<https://w3id.org/multivocality-ontology#Agent_Related_Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/multivocality-ontology#Agent_Related_Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<https://w3id.org/multivocality-ontology#Agent_Related_Statement> <http://www.w3.org/2000/01/rdf-schema#label> "Statement about agent. "@en .
+# 
+# https://w3id.org/multivocality-ontology#Functional_Statement
+<https://w3id.org/multivocality-ontology#Functional_Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/multivocality-ontology#Functional_Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<https://w3id.org/multivocality-ontology#Functional_Statement> <http://www.w3.org/2000/01/rdf-schema#label> "Statement about a function. "@en .
+# 
+# https://w3id.org/multivocality-ontology#Material_Attribution_Statement
+<https://w3id.org/multivocality-ontology#Material_Attribution_Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/multivocality-ontology#Material_Attribution_Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> .
+<https://w3id.org/multivocality-ontology#Material_Attribution_Statement> <http://www.w3.org/2000/01/rdf-schema#label> "Statement about material attribution. "@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of I2 Belief with the instance of I5 Inference Making that used it as a premise."@en .
+<http://www.cidoc-crm.org/extensions/crminf/J1_used_as_premise> <http://www.w3.org/2000/01/rdf-schema#label> "used as premise"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J1i_was_premise_for> <http://www.w3.org/2000/01/rdf-schema#label> "was premise for"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of I2 Belief with the instance of I1 Argumentation that concluded it."@en .
+<http://www.cidoc-crm.org/extensions/crminf/J2_concluded_that> <http://www.w3.org/2000/01/rdf-schema#label> "concluded that"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J2i_was_concluded_by> <http://www.w3.org/2000/01/rdf-schema#label> "was concluded by"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J3_applies> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of I3 Inference Logic with the instance of I5 Inference Making that used it to draw its conclusion."@en .
+<http://www.cidoc-crm.org/extensions/crminf/J3_applies> <http://www.w3.org/2000/01/rdf-schema#label> "applies"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J3i_was_applied_by> <http://www.w3.org/2000/01/rdf-schema#label> "was applied by"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of I2 Belief with the I6 Belief Value that reflects the opinion of the instance of I2 Belief about the I4 Proposition Set associated with it."@en .
+<http://www.cidoc-crm.org/extensions/crminf/J5_holds_to_be> <http://www.w3.org/2000/01/rdf-schema#label> "holds to be"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J6_adopted> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of I2 Belief with the instance of I7 Belief Adoption that used it as the source of the I6 Belief Value and propositions used in the resulting new I2 Belief."@en .
+<http://www.cidoc-crm.org/extensions/crminf/J6_adopted> <http://www.w3.org/2000/01/rdf-schema#label> "adopted"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J6i_adopted_by> <http://www.w3.org/2000/01/rdf-schema#label> "adopted by"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of I7 Belief Adoption with the instance of E73 Information Object that was the source of or evidence for the I4 Proposition Set that was adopted."@en .
+<http://www.cidoc-crm.org/extensions/crminf/J7_is_based_on_evidence_from> <http://www.w3.org/2000/01/rdf-schema#label> "is based on evidence from"@en .
+# 
+<http://www.cidoc-crm.org/extensions/crminf/J7i_is_evidence_for> <http://www.w3.org/2000/01/rdf-schema#label> "is evidence for"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
