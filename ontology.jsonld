@@ -388,41 +388,52 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/"
   } ]
 }, {
-  "@id" : "https://w3id.org/multivocality-ontology#Agent_Related_Statement",
+  "@id" : "https://w3id.org/multivocality-ontology/Agent_Related_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Statement about agent. "
+    "@value" : "This class represents a subclass of Proposition Set and identifies a statement about an agent, for example, a statement on the attribution of an artwork to an agent expressed within an information object. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
+  } ]
+},
+{
+  "@id" : "https://w3id.org/multivocality-ontology/Technique_Attribution_Statement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a subclass of Proposition Set and identifies a statement about a technique attribution, for example, if an artwork has been made with a specific technique. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
   } ]
 }, {
-  "@id" : "https://w3id.org/multivocality-ontology#Functional_Statement",
+  "@id" : "https://w3id.org/multivocality-ontology/Functional_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Statement about a function. "
+    "@value" : "This class represents a subclass of Proposition Set and identifies a statement about a functional use of something, for example, how a musical object is believed to be used. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
   } ]
 }, {
-  "@id" : "https://w3id.org/multivocality-ontology#Material_Attribution_Statement",
+  "@id" : "https://w3id.org/multivocality-ontology/Material_Attribution_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Statement about material attribution. "
+    "@value" : "This class represents a subclass of Proposition Set and identifies a statement about a material attribution, for example, if a vase is stated to be made of clay. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
   } ]
 }, {
-  "@id" : "https://w3id.org/multivocality-ontology#accordingTo",
+  "@id" : "https://w3id.org/multivocality-ontology/accordingTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "According to. "
+    "@value" : "This object property enables a shortcut for the explicit representation of the relationship between instances of I6 belief value and S4 observations and their respective sources. For example, a belief value resulting from an observation of a person can be True according to the person who made the observation, and False according to another person's observation. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value"
@@ -431,11 +442,11 @@
     "@id" : "http://www.cidoc-crm.org/extensions/crmsci/S4_Observation"
   } ]
 }, {
-  "@id" : "https://w3id.org/multivocality-ontology#hasContributor",
+  "@id" : "https://w3id.org/multivocality-ontology/hasContributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Making contribution explicit. "
+    "@value" : "This object property links an instance of E73 information object to the instance of E39 actor who has made a contribution to it. It represents the involvement of actors, even unknown or invisible ones, in creating, modifying, or disseminating information, such as local knowledge about plant use that is not properly credited by the author of a book. This property captures the collaborative nature of knowledge production and enhances transparency and traceability. It facilitates tracking contributions by different actors and enables attribution within the domain, along with identifying gaps in the available knowledge. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
