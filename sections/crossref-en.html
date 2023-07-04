@@ -6,8 +6,8 @@ This section provides details for each class and property defined by Multivocali
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#Agent_Related_Statement"
-            title="https://w3id.org/multivocality-ontology#Agent_Related_Statement">
+         <a href="https://w3id.org/multivocality-ontology/Agent_Related_Statement"
+            title="https://w3id.org/multivocality-ontology/Agent_Related_Statement">
             <span>agent related statement</span>
          </a>
       </li>
@@ -24,9 +24,15 @@ This section provides details for each class and property defined by Multivocali
             title="http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption">Belief Adoption</a>
       </li>
       <li>
-         <a href="#Functional_Statement"
-            title="https://w3id.org/multivocality-ontology#Functional_Statement">
+         <a href="https://w3id.org/multivocality-ontology/Functional_Statement"
+            title="https://w3id.org/multivocality-ontology/Functional_Statement">
             <span>functional statement</span>
+         </a>
+      </li>
+      <li>
+         <a href="https://w3id.org/multivocality-ontology/Technique_Attribution_Statement"
+            title="https://w3id.org/multivocality-ontology/Technique_Attribution_Statement">
+            <span>technique attribution statement</span>
          </a>
       </li>
       <li>
@@ -96,9 +102,9 @@ This section provides details for each class and property defined by Multivocali
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#Agent_Related_Statement</p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology/Agent_Related_Statement</p>
       <div class="comment">
-         <span class="markdown">Statement about agent. </span>
+         <span class="markdown">This class represents a subclass of Proposition Set and identifies a statement about an agent, for example, a statement on the attribution of an artwork to an agent expressed within an information object. </span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -243,9 +249,28 @@ This section provides details for each class and property defined by Multivocali
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#Functional_Statement</p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology/Functional_Statement</p>
       <div class="comment">
-         <span class="markdown">Statement about a function. </span>
+         <span class="markdown">This class represents a subclass of Proposition Set and identifies a statement about a functional use of something, for example, how a musical object is believed to be used. </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
+               title="http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set">Proposition Set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Technique_Attribution_Statement">
+      <h3>technique attribution statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology/Technique_Attribution_Statement</p>
+      <div class="comment">
+         <span class="markdown">This class represents a subclass of Proposition Set and identifies a statement about a technique attribution, for example, if an artwork has been made with a specific technique. </span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -350,7 +375,7 @@ This section provides details for each class and property defined by Multivocali
       <p>
          <strong>IRI:</strong> http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making</p>
       <div class="comment">
-         <span class="markdown">This class comprises the action of making honest propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions. 
+         <span class="markdown">This class comprises the action of making honest propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions.
 	It is characterized by the use of an existing I2 Belief as the premise that together with a set of I3 Inference Logic draws a further I2 Belief as a conclusion.
 	Documenting instances of I5 Inference Making primarily enables tracing the dependency of knowledge from conclusion to premise through subsequent inferences, possibly back to primary evidence, so that the range of influence of knowledge revision at any intermediate stage of complex inference chains on current convictions can be narrowed down by query. The explicit reference to the applied inference logic further allows scholars or scientists to assess if they can or would follow the documented argument. The class is not intended to promote the use of computationally decidable systems of logic as replacements of scholarly justifications of arguments, even though it allows for documenting the use of decidable logic, if that was deemed adequate for the problem at hand.  Principles of scholarly justifications of arguments are also regarded as kinds of inference logic.</span>
       </div>
@@ -395,9 +420,9 @@ This section provides details for each class and property defined by Multivocali
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#Material_Attribution_Statement</p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology/Material_Attribution_Statement</p>
       <div class="comment">
-         <span class="markdown">Statement about material attribution. </span>
+         <span class="markdown">This class represents a subclass of Proposition Set and identifies a statement about a material attribution, for example, if a vase is stated to be made of clay. </span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -427,14 +452,16 @@ This section provides details for each class and property defined by Multivocali
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#Agent_Related_Statement"
-               title="https://w3id.org/multivocality-ontology#Agent_Related_Statement">agent related statement</a>
+            <a href="https://w3id.org/multivocality-ontology/Agent_Related_Statement"
+               title="https://w3id.org/multivocality-ontology/Agent_Related_Statement">agent related statement</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Functional_Statement"
-               title="https://w3id.org/multivocality-ontology#Functional_Statement">functional statement</a>
+               title="https://w3id.org/multivocality-ontology/Functional_Statement">functional statement</a>
+               <a href="https://w3id.org/multivocality-ontology/Technique_Attribution_Statement"
+                  title="https://w3id.org/multivocality-ontology/Technique_Attribution_Statement">technique attribution statement</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement"
                title="http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement">i10 provenance statement</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Material_Attribution_Statement"
-               title="https://w3id.org/multivocality-ontology#Material_Attribution_Statement">material attribution statement</a>
+               title="https://w3id.org/multivocality-ontology/Material_Attribution_Statement">material attribution statement</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -468,7 +495,7 @@ This section provides details for each class and property defined by Multivocali
          <dt>is in range of</dt>
          <dd>
             <a href="#accordingTo"
-               title="https://w3id.org/multivocality-ontology#accordingTo">according to</a>
+               title="https://w3id.org/multivocality-ontology/accordingTo">according to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -544,7 +571,7 @@ This section provides details for each class and property defined by Multivocali
    <ul class="hlist">
       <li>
          <a href="#accordingTo"
-            title="https://w3id.org/multivocality-ontology#accordingTo">
+            title="https://w3id.org/multivocality-ontology/accordingTo">
             <span>according to</span>
          </a>
       </li>
@@ -635,9 +662,9 @@ This section provides details for each class and property defined by Multivocali
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#accordingTo</p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology/accordingTo</p>
       <div class="comment">
-         <span class="markdown">According to. </span>
+         <span class="markdown">This object property enables a shortcut for the explicit representation of the relationship between instances of I6 belief value and S4 observations and their respective sources. For example, a belief value resulting from an observation of a person can be True according to the person who made the observation, and False according to another person's observation. </span>
       </div>
       <div class="description">
          <dl>
@@ -774,9 +801,9 @@ This section provides details for each class and property defined by Multivocali
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/multivocality-ontology#hasContributor</p>
+         <strong>IRI:</strong> https://w3id.org/multivocality-ontology/hasContributor</p>
       <div class="comment">
-         <span class="markdown">Making contribution explicit. </span>
+         <span class="markdown">This object property links an instance of E73 information object to the instance of E39 actor who has made a contribution to it. It represents the involvement of actors, even unknown or invisible ones, in creating, modifying, or disseminating information, such as local knowledge about plant use that is not properly credited by the author of a book. This property captures the collaborative nature of knowledge production and enhances transparency and traceability. It facilitates tracking contributions by different actors and enables attribution within the domain, along with identifying gaps in the available knowledge. </span>
       </div>
       <div class="description">
          <dl>
