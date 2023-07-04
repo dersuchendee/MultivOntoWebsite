@@ -19,7 +19,7 @@
 }, {
   "@id" : "http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This class comprises statements about the provenance of an instance of E73 Information Object with known content at the time of making the provenance statements. An instance of I10 Provenance Statement must contain propositions about the presence of a carrier of the respective instance of E73 Information Object in an event or spatiotemporal context of reference. Characteristically, it may pertain to the writing by a known author at a known or unknown date or place, or to the existence of the text known to some public regardless the truth of authorship. "
   } ],
@@ -99,7 +99,7 @@
 }, {
   "@id" : "http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -382,7 +382,7 @@
   "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/multivocality-ontology/",
+  "@id" : "https://w3id.org/multivocality-ontology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/"
@@ -390,29 +390,30 @@
 }, {
   "@id" : "https://w3id.org/multivocality-ontology/Agent_Related_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Statement about agent. "
+    "@value" : "This class represents a subclass of Proposition Set and identifies a statement about an agent, for example, a statement on the attribution of an artwork to an agent expressed within an information object. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
+  } ]
+},
+{
+  "@id" : "https://w3id.org/multivocality-ontology/Technique_Attribution_Statement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a subclass of Proposition Set and identifies a statement about a technique attribution, for example, if an artwork has been made with a specific technique. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
   } ]
 }, {
-  "@id" : "https://w3id.org/multivocality-ontology/Functional_Attribution_Statement",
+  "@id" : "https://w3id.org/multivocality-ontology/Functional_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Statement about a function. "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
-  } ]
-}, {
-  "@id" : "https://w3id.org/multivocality-ontology/Identity_Attribution_Statement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Identity statement. "
+    "@value" : "This class represents a subclass of Proposition Set and identifies a statement about a functional use of something, for example, how a musical object is believed to be used. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
@@ -420,19 +421,9 @@
 }, {
   "@id" : "https://w3id.org/multivocality-ontology/Material_Attribution_Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Statement about material attribution. "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
-  } ]
-}, {
-  "@id" : "https://w3id.org/multivocality-ontology/Technique_Attribution_Statement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Technique attribution statement. "
+    "@value" : "This class represents a subclass of Proposition Set and identifies a statement about a material attribution, for example, if a vase is stated to be made of clay. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set"
@@ -440,12 +431,12 @@
 }, {
   "@id" : "https://w3id.org/multivocality-ontology/accordingTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This object property enables a shortcut for the explicit representation of the relationship between instances of I6 belief value and S4 observations and their respective sources. For example, a belief value resulting from an observation of a person can be True according to the person who made the observation, and False according to another person's observation. "
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "According to. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.cidoc-crm.org/extensions/crmsci/S4_Observation"
@@ -453,30 +444,14 @@
 }, {
   "@id" : "https://w3id.org/multivocality-ontology/hasContributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This object property links an instance of E73 information object to the instance of E39 actor who has made a contribution to it. It represents the involvement of actors, even unknown or invisible ones, in creating, modifying, or disseminating information, such as local knowledge about plant use that is not properly credited by the author of a book. This property captures the collaborative nature of knowledge production and enhances transparency and traceability. It facilitates tracking contributions by different actors and enables attribution within the domain, along with identifying gaps in the available knowledge. "
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Making contribution explicit. "
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/multivocality-ontology/isContributorOf"
-  } ]
-}, {
-  "@id" : "https://w3id.org/multivocality-ontology/isContributorOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Is contributor of. "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
   } ]
 } ]

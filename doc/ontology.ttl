@@ -1,13 +1,13 @@
-@prefix : <https://w3id.org/multivocality-ontology/> .
+@prefix : <https://w3id.org/multivocality-ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/multivocality-ontology/> .
+@base <https://w3id.org/multivocality-ontology#> .
 
-<https://w3id.org/multivocality-ontology/> rdf:type owl:Ontology ;
-                                            owl:imports <http://www.cidoc-crm.org/cidoc-crm/> .
+<https://w3id.org/multivocality-ontology> rdf:type owl:Ontology ;
+                                           owl:imports <http://www.cidoc-crm.org/cidoc-crm/> .
 
 #################################################################
 #    Annotation properties
@@ -175,23 +175,14 @@
 :accordingTo rdf:type owl:ObjectProperty ;
              rdfs:domain <http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value> ;
              rdfs:range <http://www.cidoc-crm.org/extensions/crmsci/S4_Observation> ;
-             rdfs:label "According to. "@en .
+             rdfs:comment "This object property enables a shortcut for the explicit representation of the relationship between instances of I6 belief value and S4 observations and their respective sources. For example, a belief value resulting from an observation of a person can be True according to the person who made the observation, and False according to another person's observation. "@en .
 
 
 ###  https://w3id.org/multivocality-ontology/hasContributor
 :hasContributor rdf:type owl:ObjectProperty ;
-                owl:inverseOf :isContributorOf ;
                 rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
                 rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> ;
-                rdfs:label "Making contribution explicit. "@en .
-
-
-###  https://w3id.org/multivocality-ontology/isContributorOf
-:isContributorOf rdf:type owl:ObjectProperty ,
-                          owl:InverseFunctionalProperty ;
-                 rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> ;
-                 rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
-                 rdfs:label "Is contributor of. "@en .
+                rdfs:comment "This object property links an instance of E73 information object to the instance of E39 actor who has made a contribution to it. It represents the involvement of actors, even unknown or invisible ones, in creating, modifying, or disseminating information, such as local knowledge about plant use that is not properly credited by the author of a book. This property captures the collaborative nature of knowledge production and enhances transparency and traceability. It facilitates tracking contributions by different actors and enables attribution within the domain, along with identifying gaps in the available knowledge. "@en .
 
 
 #################################################################
@@ -211,7 +202,7 @@
 ###  http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement
 <http://www.cidoc-crm.org/extensions/crminf/I10_Provenance_Statement> rdf:type owl:Class ;
                                                                       rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> ;
-                                                                      rdfs:label "This class comprises statements about the provenance of an instance of E73 Information Object with known content at the time of making the provenance statements. An instance of I10 Provenance Statement must contain propositions about the presence of a carrier of the respective instance of E73 Information Object in an event or spatiotemporal context of reference. Characteristically, it may pertain to the writing by a known author at a known or unknown date or place, or to the existence of the text known to some public regardless the truth of authorship. "@en .
+                                                                      rdfs:comment "This class comprises statements about the provenance of an instance of E73 Information Object with known content at the time of making the provenance statements. An instance of I10 Provenance Statement must contain propositions about the presence of a carrier of the respective instance of E73 Information Object in an event or spatiotemporal context of reference. Characteristically, it may pertain to the writing by a known author at a known or unknown date or place, or to the existence of the text known to some public regardless the truth of authorship. "@en .
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation
@@ -251,7 +242,7 @@
 ###  http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making
 <http://www.cidoc-crm.org/extensions/crminf/I5_Inference_Making> rdf:type owl:Class ;
                                                                  rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I1_Argumentation> ;
-                                                                 rdfs:comment """This class comprises the action of making honest propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions. 
+                                                                 rdfs:comment """This class comprises the action of making honest propositions and statements about particular states of affairs in reality or in possible realities or categorical descriptions of reality by using inferences from other statements based on hypotheses and any form of formal or informal logic. It includes evaluations, calculations, and interpretations based on mathematical formulations and propositions.
 	It is characterized by the use of an existing I2 Belief as the premise that together with a set of I3 Inference Logic draws a further I2 Belief as a conclusion.
 	Documenting instances of I5 Inference Making primarily enables tracing the dependency of knowledge from conclusion to premise through subsequent inferences, possibly back to primary evidence, so that the range of influence of knowledge revision at any intermediate stage of complex inference chains on current convictions can be narrowed down by query. The explicit reference to the applied inference logic further allows scholars or scientists to assess if they can or would follow the documented argument. The class is not intended to promote the use of computationally decidable systems of logic as replacements of scholarly justifications of arguments, even though it allows for documenting the use of decidable logic, if that was deemed adequate for the problem at hand.  Principles of scholarly justifications of arguments are also regarded as kinds of inference logic."""@en ;
                                                                  rdfs:label "Inference Making"@en .
@@ -260,7 +251,7 @@
 ###  http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value
 <http://www.cidoc-crm.org/extensions/crminf/I6_Belief_Value> rdf:type owl:Class ;
                                                              rdfs:subClassOf rdfs:Resource ;
-                                                             rdfs:label "This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system." .
+                                                             rdfs:comment "This class comprises any encoding of the value of the truth of an I2 Belief. It may be expressed in terms of discrete logic, modal logic, probability, fuzziness or other adequate representational system." .
 
 
 ###  http://www.cidoc-crm.org/extensions/crminf/I7_Belief_Adoption
@@ -305,31 +296,24 @@ rdfs:Resource rdf:type owl:Class .
 ###  https://w3id.org/multivocality-ontology/Agent_Related_Statement
 :Agent_Related_Statement rdf:type owl:Class ;
                          rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> ;
-                         rdfs:label "Statement about agent. "@en .
+                         rdfs:comment """This class represents a subclass of Proposition Set and identifies a statement about an agent, for example, a statement on the attribution of an artwork to an agent expressed within an information object. """@en .
 
 
-###  https://w3id.org/multivocality-ontology/Functional_Attribution_Statement
-:Functional_Attribution_Statement rdf:type owl:Class ;
-                                  rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> ;
-                                  rdfs:label "Statement about a function. "@en .
-
-
-###  https://w3id.org/multivocality-ontology/Identity_Attribution_Statement
-:Identity_Attribution_Statement rdf:type owl:Class ;
-                                rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> ;
-                                rdfs:label "Identity statement. "@en .
+###  https://w3id.org/multivocality-ontology/Functional_Statement
+:Functional_Statement rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> ;
+                      rdfs:comment "This class represents a subclass of Proposition Set and identifies a statement about a functional use of something, for example, how a musical object is believed to be used. "@en .
 
 
 ###  https://w3id.org/multivocality-ontology/Material_Attribution_Statement
 :Material_Attribution_Statement rdf:type owl:Class ;
                                 rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> ;
-                                rdfs:label "Statement about material attribution. "@en .
-
+                                rdfs:comment "This class represents a subclass of Proposition Set and identifies a statement about a material attribution, for example, if a vase is stated to be made of clay. "@en .
 
 ###  https://w3id.org/multivocality-ontology/Technique_Attribution_Statement
 :Technique_Attribution_Statement rdf:type owl:Class ;
-                                 rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> ;
-                                 rdfs:label "Technique attribution statement. "@en .
+                                rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crminf/I4_Proposition_Set> ;
+                                rdfs:comment "This class represents a subclass of Proposition Set and identifies a statement about a technique attribution, for example, if an artwork has been made with a specific technique. "@en .
 
 
 #################################################################
